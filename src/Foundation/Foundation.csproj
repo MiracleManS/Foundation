@@ -1,5 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\..\build\Targets\localconfig.targets" />
+  <Import Project="..\..\build\Targets\npm-publish.targets" />
   <Import Project="..\..\packages\EntityFramework.6.3.0\build\EntityFramework.props" Condition="Exists('..\..\packages\EntityFramework.6.3.0\build\EntityFramework.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -1159,7 +1161,6 @@
     <Content Include="Assets\js\features\Selection.js" />
     <Content Include="Assets\js\features\selective\Locations.js" />
     <Content Include="Assets\js\features\selective\Stores.js" />
-    <Content Include="Assets\js\main.min.js" />
     <Content Include="Assets\js\plugins\fontawesomeicons.js" />
     <Content Include="Assets\js\features\notifyHelper.js" />
     <Content Include="Assets\js\vendors\bootstrap-slider\bootstrap-slider.js" />
@@ -1230,7 +1231,6 @@
     <Content Include="Assets\scss\templates\widgets\_toolbar.scss" />
     <Content Include="Assets\scss\templates\pages\_category-page.scss" />
     <Content Include="Assets\scss\templates\pages\_order-detail-page.scss" />
-    <Content Include="Assets\scss\main.min.css" />
     <Content Include="Assets\scss\vendors\bootstrap-slider\bootstrap-slider.css" />
     <Content Include="Assets\scss\vendors\font-awesome-5.9.0\css\all.css" />
     <Content Include="Assets\scss\vendors\font-awesome-5.9.0\css\all.min.css" />
@@ -1372,10 +1372,7 @@
     </Content>
     <Content Include="App_Data\GeoLite2-City-Locations-en.csv" />
     <Content Include="App_Data\GeoLite2-City.mmdb" />
-    <Content Include="episerver.config" />
-    <Content Include="EPiServerFramework.config" />
-    <Content Include="appSettings.config" />
-    <Content Include="appSettings.debug.config" />
+    <Content Include="appSettings.template.config" />
     <Content Include="Configs\baf.config" />
     <Content Include="Configs\baf.data.manager.config" />
     <Content Include="Configs\baf.data.metaobject.config" />
@@ -1396,9 +1393,7 @@
     <Content Include="Assets\icons\cms\README.md" />
     <Content Include="App_Data\Taxes.csv" />
     <Content Include="Assets\scss\main.scss" />
-    <Content Include="Assets\js\main.min.js.map" />
     <Content Include="App_Code\Helpers.cshtml" />
-    <Content Include="Assets\scss\main.min.css.map" />
     <Content Include="Assets\scss\vendors\gijgo\fonts\gijgo-material.eot" />
     <Content Include="Assets\scss\vendors\gijgo\fonts\gijgo-material.ttf" />
     <Content Include="Assets\scss\vendors\gijgo\fonts\gijgo-material.woff" />
@@ -1448,7 +1443,6 @@
     <Content Include="Assets\scss\templates\widgets\_breadcrumb.scss" />
     <Content Include="Assets\scss\templates\pages\_blog-item.scss" />
     <Content Include="Assets\scss\templates\pages\_blog-list.scss" />
-    <Content Include="connectionStrings.config" />
     <Content Include="Assets\js\features\foundation.cms.personalization.js" />
     <Content Include="Assets\scss\vendors\bootstrap-4.3.1\bootstrap-grid.scss" />
     <Content Include="Assets\scss\vendors\bootstrap-4.3.1\bootstrap-reboot.scss" />
@@ -1824,6 +1818,7 @@
     <Content Include="Features\MyAccount\_MyAccountLayout.cshtml" />
     <Content Include="Features\Blocks\Views\CarouselBlock.cshtml" />
     <Content Include="Features\MyAccount\OrderHistory\_OrderFilterBox.cshtml" />
+    <Content Include="connectionStrings.template.config" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>

@@ -16,7 +16,7 @@ gulp.task('sass', () => {
         .pipe(autoprefixer(['last 3 versions', '> 1%'], { cascade: true }))
         .pipe(rename({ suffix: '.min' }))
         .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest('./assets/scss'));
+        .pipe(gulp.dest('./assets/dist'));
 });
 
 gulp.task('js', () => {
@@ -25,7 +25,7 @@ gulp.task('js', () => {
         .pipe(js_concat('main.min.js'))
         //.pipe(js_minify())
         .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest('./assets/js/'));
+        .pipe(gulp.dest('./assets/dist/'));
 });
 
 gulp.task('watch', () => {

@@ -25,6 +25,22 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Foundation.Demo", "src\Foun
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Foundation.Find.Commerce", "src\Foundation.Find.Commerce\Foundation.Find.Commerce.csproj", "{61B070FB-1343-465B-9C3B-14DD8C7722E9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "webapps", "webapps", "{189FA48F-F7D3-4AD5-A351-2B515E6D7404}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{95E8AA76-083E-497F-BA31-A55C9E903DFC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_items", "_items", "{E5BCCAB1-0FD0-4BD9-AE49-8A2E458A3467}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+		build.cmd = build.cmd
+		License.txt = License.txt
+		Nuget.config = Nuget.config
+		Pack.cmd = Pack.cmd
+		README.md = README.md
+		setup.cmd = setup.cmd
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -78,6 +94,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{856C325A-2CC0-422C-B964-1BD10EA14C99} = {189FA48F-F7D3-4AD5-A351-2B515E6D7404}
+		{121D8737-4300-4828-83D4-61D807A6339F} = {189FA48F-F7D3-4AD5-A351-2B515E6D7404}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CC916518-501C-4766-BC53-915DECEE5919}

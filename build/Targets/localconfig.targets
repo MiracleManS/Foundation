@@ -1,0 +1,6 @@
+<Project>
+    <Target Name="CreateConfigsIfNotExists" BeforeTargets="Build">
+        <Copy Condition="!Exists('connectionStrings.local.config')" SourceFiles="connectionStrings.template.config" DestinationFiles="connectionStrings.local.config" OverwriteReadOnlyFiles="True" />
+        <Copy Condition="!Exists('appsettings.local.config')" SourceFiles="appsettings.template.config" DestinationFiles="appsettings.local.config" OverwriteReadOnlyFiles="True" />
+    </Target>
+</Project>

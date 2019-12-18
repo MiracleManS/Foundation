@@ -78,13 +78,7 @@ Setup*.log
 Build/Logs/*.log
 src/appdata/*
 src/Foundation/App_Data/GeoLiteCity.dat
-src/Foundation/Assets/scss/main.min.css
-src/Foundation/Assets/scss/main.min.css.map
-src/Foundation/Assets/js/main.min.js
-src/Foundation/Assets/js/main.min.js.map
-src/Foundation/License.config
-src/Foundation/connectionStrings.config
-src/Foundation.CommerceManager/connectionStrings.config
+dist/
 src/Foundation.CommerceManager/App_Data/ImportExport/*
 rebuild.cmd
 resetup.cmd

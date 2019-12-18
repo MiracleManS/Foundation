@@ -1,0 +1,17 @@
+<Project>
+    <PropertyGroup>
+        <CopyAllFilesToSingleFolderForPackageDependsOn>PackageDynamicFiles;$(CopyAllFilesToSingleFolderForPackageDependsOn);</CopyAllFilesToSingleFolderForPackageDependsOn>
+        <CopyAllFilesToSingleFolderForMsdeployDependsOn>PackageDynamicFiles;$(CopyAllFilesToSingleFolderForPackageDependsOn);</CopyAllFilesToSingleFolderForMsdeployDependsOn>
+    </PropertyGroup>
+    <Target Name="PackageDynamicFiles">
+        <Message Text="Static Asset Compilation Start" Importance="high" />
+        <Exec Command="npm run build" WorkingDirectory="Assets" />
+        <Message Text="Static Asset Compilation End" Importance="high" />
+        <ItemGroup>
+            <DistFolder Include="Assets\dist\**" />
+            <FilesForPackagingFromProject Include="%(DistFolder.Identity)">
+                <DestinationRelativePath>Assets\dist\%(RecursiveDir)%(Filename)%(Extension)</DestinationRelativePath>
+            </FilesForPackagingFromProject>
+        </ItemGroup>
+    </Target>
+</Project>

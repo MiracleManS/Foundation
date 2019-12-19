@@ -9,13 +9,22 @@ Set-ExecutionPolicy Bypass -Scope Process
 
 if ($null -eq $VSMODE) {
     Write-Host "Choose Visual Studio version from options below"
-	Write-Host "visualstudio2019buildtools|visualstudio2019enterprise|visualstudio2019professional|visualstudio2019community"
+	Write-Host "skip|visualstudio2019buildtools|visualstudio2019enterprise|visualstudio2019professional|visualstudio2019community"
 	$VSMODE =  Read-Host "Please enter selection"
+}
+
+if ($null -eq $VSLOCALE) {
+    Write-Host "Choose Visual Studio locale"
+	$VSLOCALE =  Read-Host "Please enter selection (default: en-US)"
+
+	if ($VSLOCALE -eq "") {
+		$VSLOCALE = "en-US"
+	}
 }
 
 if ($null -eq $SQLMODE) {
     Write-Host "Choose Sql Server version from options below"
-	Write-Host "sql-server-2017|sql-server-2019"
+	Write-Host "skip|sql-server-2017|sql-server-2019"
 	$SQLMODE =  Read-Host "Please enter selection"
 }
 . $PSScriptRoot\_epi-wait.ps1
@@ -89,10 +98,14 @@ choco install postman -y
 choco install vswhere -y
 choco install nodejs-lts -y
 
-choco install $VSMODE -y --package-parameters "--allWorkloads --includeRecommended --includeOptional --passive --locale en-US"
+if ($VSMODE -ne "skip" -or $VSMODE -eq ""){
+	choco install $VSMODE -y --package-parameters "--allWorkloads --includeRecommended --includeOptional --passive --locale $VSLOCALE"
+}
 
 #:::: SQL tools
-choco install $SQLMODE -y --params="/SECURITYMODE:SQL" # enables mixed mode auth
+if ($SQLMODE -ne "skip" -or $SQLMODE -eq ""){
+	choco install $SQLMODE -y --params="/SECURITYMODE:SQL" # enables mixed mode auth
+}
 choco install sql-server-management-studio -y 
 choco install dbatools -y
 

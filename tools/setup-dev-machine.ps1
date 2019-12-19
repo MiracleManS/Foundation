@@ -5,8 +5,20 @@
 # * Make sure Powershell Execution Policy is bypassed to run these scripts:
 # * YOU MAY HAVE TO RUN THIS COMMAND PRIOR TO RUNNING THIS SCRIPT!
 Set-ExecutionPolicy Bypass -Scope Process
-. $PSScriptRoot\check-admin.ps1
+. $PSScriptRoot\_check-admin.ps1
 
+if ($null -eq $VSMODE) {
+    Write-Host "Choose Visual Studio version from options below"
+	Write-Host "visualstudio2019buildtools|visualstudio2019enterprise|visualstudio2019professional|visualstudio2019community"
+	$VSMODE =  Read-Host "Please enter selection"
+}
+
+if ($null -eq $SQLMODE) {
+    Write-Host "Choose Sql Server version from options below"
+	Write-Host "sql-server-2017|sql-server-2019"
+	$SQLMODE =  Read-Host "Please enter selection"
+}
+. $PSScriptRoot\_epi-wait.ps1
 
 # To list all Windows Features: dism /online /Get-Features
 # Get-WindowsOptionalFeature -Online 
@@ -35,6 +47,7 @@ Enable-WindowsOptionalFeature -Online -NoRestart -FeatureName IIS-WebServerManag
 #Enable-WindowsOptionalFeature -Online -NoRestart -FeatureName IIS-IIS6ManagementCompatibility
 #Enable-WindowsOptionalFeature -Online -NoRestart -FeatureName IIS-Metabase
 Enable-WindowsOptionalFeature -Online -NoRestart -FeatureName IIS-ManagementConsole
+Enable-WindowsOptionalFeature -Online -NoRestart -FeatureName IIS-URLAuthorization
 #Enable-WindowsOptionalFeature -Online -NoRestart -FeatureName IIS-BasicAuthentication
 #Enable-WindowsOptionalFeature -Online -NoRestart -FeatureName IIS-WindowsAuthentication
 Enable-WindowsOptionalFeature -Online -NoRestart -FeatureName IIS-StaticContent
@@ -72,25 +85,18 @@ choco install firefox -y
 choco install azure-cli -y
 choco install vscode -y
 choco install git -y
+choco install postman -y
+choco install vswhere -y
 choco install nodejs-lts -y
-
-if ($null -eq $VSMODE) {
-    Write-Host "Choose Visual Studio version from options below"
-	Write-Host "visualstudio2019buildtools|visualstudio2019enterprise|visualstudio2019professional|visualstudio2019community"
-	$VSMODE =  Read-Host "Please enter selection"
-}
 
 choco install $VSMODE -y --package-parameters "--allWorkloads --includeRecommended --includeOptional --passive --locale en-US"
 
 #:::: SQL tools
-if ($null -eq $SQLMODE) {
-    Write-Host "Choose Sql Server version from options below"
-	Write-Host "sql-server-2017|sql-server-2019"
-	$SQLMODE =  Read-Host "Please enter selection"
-}
-
 choco install $SQLMODE -y --params="/SECURITYMODE:SQL" # enables mixed mode auth
 choco install sql-server-management-studio -y 
+choco install dbatools -y
 
 Write-Host "Attempting to start MS SQl Server"
 net start "SQL Server (MSSQLSERVER)"
+
+Write-Host "Please restart the computer now"

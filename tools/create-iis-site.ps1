@@ -6,6 +6,7 @@ Import-Module WebAdministration
 
 $hostname = $HOSTNAMES[0]
 $iisSite = $HOSTNAME
+$CERTPATH = "cert:\LocalMachine\my\"
 
 # http.sys mapping of ip/hostheader to cert
 $cert = (Get-ChildItem $CERTPATH | where-object { $_.Subject -like "*$hostname*" } | Select-Object -First 1).Thumbprint
@@ -33,6 +34,13 @@ New-Website -Name $iisSite -Port 80 -HostHeader $hostname -PhysicalPath $WEBROOT
 # 3  SNI binding which uses Central Certificate store
 
 New-WebBinding -name $iisSite -Protocol https  -HostHeader $hostname -Port 443 -SslFlags 1
+
+foreach ($hostHeader in $HOSTNAMES) {
+    if ($hostHeader -ne $hostname) {
+        New-WebBinding -name $iisSite -Protocol http -HostHeader $hostHeader -Port 80 -Force
+        New-WebBinding -name $iisSite -Protocol https -HostHeader $hostHeader -Port 443 -SslFlags 1 -Force
+	}
+}
 
 # netsh http delete sslcert hostnameport="${hostname}:443"
 # netsh http show sslcert

@@ -1,31 +1,31 @@
 @using ImageProcessor.Web.Episerver
-@model IBlockViewModel<TeaserBlock>
+@model TeaserBlock
 
 <div class="border">
     @*Link the teaser block only if a link has been set and not displayed in preview*@
     @using (Html.BeginConditionalLink(
         //!(ViewContext.Controller is PreviewController) &&
-        !ContentReference.IsNullOrEmpty(Model.CurrentBlock.Link),
-        Url.PageLinkUrl(Model.CurrentBlock.Link),
-        Model.CurrentBlock.Heading))
+        !ContentReference.IsNullOrEmpty(Model.Link),
+        Url.PageLinkUrl(Model.Link),
+        Model.Heading))
     {
-        <div style="@Model.CurrentBlock.PaddingStyles">
+        <div style="@Model.PaddingStyles">
             <div class="media">
                 @if (PageEditing.PageIsInEditMode)
                 {
-                    <div class="mediaImg" @Html.EditAttributes(x => x.CurrentBlock.Image)>
-                        <img src="@Html.ProcessImage(@Url.ContentUrl(Model.CurrentBlock.Image)).Resize(348, 145, ImageProcessor.Imaging.ResizeMode.Min)" />
+                    <div class="mediaImg" @Html.EditAttributes(x => x.Image)>
+                        <img src="@Html.ProcessImage(@Url.ContentUrl(Model.Image)).Resize(348, 145, ImageProcessor.Imaging.ResizeMode.Min)" />
                     </div>
                 }
-                else if (!ContentReference.IsNullOrEmpty(Model.CurrentBlock.Image))
+                else if (!ContentReference.IsNullOrEmpty(Model.Image))
                 {
                     <div class="mediaImg">
-                        <img src="@Html.ProcessImage(@Url.ContentUrl(Model.CurrentBlock.Image)).Resize(348, 145, ImageProcessor.Imaging.ResizeMode.Min)" />
+                        <img src="@Html.ProcessImage(@Url.ContentUrl(Model.Image)).Resize(348, 145, ImageProcessor.Imaging.ResizeMode.Min)" />
                     </div>
                 }
                 <div class="mediaText">
-                    <h2 @Html.EditAttributes(x => x.CurrentBlock.Heading)>@Model.CurrentBlock.Heading</h2>
-                    <p @Html.EditAttributes(x => x.CurrentBlock.Text)>@Model.CurrentBlock.Text</p>
+                    <h2 @Html.EditAttributes(x => x.Heading)>@Model.Heading</h2>
+                    <p @Html.EditAttributes(x => x.Text)>@Model.Text</p>
                 </div>
             </div>
         </div>

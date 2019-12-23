@@ -82,3 +82,4 @@ dist/
 src/Foundation.CommerceManager/App_Data/ImportExport/*
 rebuild.cmd
 resetup.cmd
+*.local.config

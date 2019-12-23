@@ -1,27 +1,27 @@
-@model  IBlockViewModel<VimeoBlock>
+@model  VimeoBlock
 @{
-    var iframeUrl = @Model.CurrentBlock.VimeoVideo.GetIframeUrl(Model.CurrentBlock.HasCoverImage);
+    var iframeUrl = @Model.VimeoVideo.GetIframeUrl(Model.HasCoverImage);
 }
 
-<div style="@Model.CurrentBlock.PaddingStyles">
-    @if (Model.CurrentBlock.HasHeadingText)
+<div style="@Model.PaddingStyles">
+    @if (Model.HasHeadingText)
     {
         <div class="media">
-            <h1 @Html.EditAttributes(x => x.CurrentBlock.Heading)>@Model.CurrentBlock.Heading</h1>
-            @Html.PropertyFor(x => x.CurrentBlock.MainBody)
+            <h1 @Html.EditAttributes(x => x.Heading)>@Model.Heading</h1>
+            @Html.PropertyFor(x => x.MainBody)
         </div>
     }
-    @if (Model.CurrentBlock.HasVideo)
+    @if (Model.HasVideo)
     {
         <div class="vimeo-container">
-            @if (Model.CurrentBlock.HasCoverImage)
+            @if (Model.HasCoverImage)
             {
                 <a href="javascript:;" class="starter"><span class="sr-only">Play video</span></a>
-                <img src="@Url.ContentUrl(Model.CurrentBlock.CoverImage)" />
+                <img src="@Url.ContentUrl(Model.CoverImage)" />
             }
             @if (!string.IsNullOrEmpty(iframeUrl))
             {
-                <iframe id="@Model.CurrentBlock.VimeoVideo.Id" src="@iframeUrl" frameborder="0" allow="autoplay; fullscreen" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <iframe id="@Model.VimeoVideo.Id" src="@iframeUrl" frameborder="0" allow="autoplay; fullscreen" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             }
         </div>
     }

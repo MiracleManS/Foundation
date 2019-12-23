@@ -1,9 +1,9 @@
-﻿﻿@model IBlockViewModel<VideoBlock>
+﻿﻿@model VideoBlock
 
-<div style="@Model.CurrentBlock.PaddingStyles">
+<div style="@Model.PaddingStyles">
     <div>
-        <video blockId="@(((IContent)Model.CurrentBlock).ContentLink.ID)" name="@(((IContent)Model.CurrentBlock).Name)" class="video-block" playsinline seeking controls>
-            <source src="@Url.ContentUrl(Model.CurrentBlock.Video)" type="video/mp4">
+        <video blockId="@(((IContent)Model).ContentLink.ID)" name="@(((IContent)Model).Name)" class="video-block" playsinline seeking controls>
+            <source src="@Url.ContentUrl(Model.Video)" type="video/mp4">
         </video>
     </div>
 </div>

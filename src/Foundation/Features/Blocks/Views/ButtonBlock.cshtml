@@ -1,13 +1,13 @@
-@model IBlockViewModel<ButtonBlock>
+@model ButtonBlock
 
-<div style="@Model.CurrentBlock.PaddingStyles">
-    <a class="@Model.CurrentBlock.ButtonStyle" title="@Model.CurrentBlock.ButtonText" href="@Url.ContentUrl(Model.CurrentBlock.ButtonLink)" @Html.EditAttributes(m => m.CurrentBlock.ButtonText)>
+<div style="@Model.PaddingStyles">
+    <a class="@Model.ButtonStyle" title="@Model.ButtonText" href="@Url.ContentUrl(Model.ButtonLink)" @Html.EditAttributes(m => m.ButtonText)>
         @{
-            var buttonText = string.IsNullOrWhiteSpace(Model.CurrentBlock.ButtonText)
+            var buttonText = string.IsNullOrWhiteSpace(Model.ButtonText)
                 ? "Button text"
-                : Model.CurrentBlock.ButtonText;
+                : Model.ButtonText;
         }
         @buttonText
     </a>
-    <p>@Html.PropertyFor(m => m.CurrentBlock.ButtonCaption)</p>
+    <p>@Html.PropertyFor(m => m.ButtonCaption)</p>
 </div>

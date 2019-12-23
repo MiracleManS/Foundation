@@ -1,5 +1,5 @@
-﻿@model IBlockViewModel<TextBlock>
+﻿@model TextBlock
 
-<div style="@Model.CurrentBlock.PaddingStyles">
-    @Html.PropertyFor(x => x.CurrentBlock.MainBody, new { CssClass = "word-break" })
+<div style="@Model.PaddingStyles">
+    @Html.PropertyFor(x => x.MainBody, new { CssClass = "word-break" })
 </div>

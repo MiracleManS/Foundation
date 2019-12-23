@@ -1,19 +1,19 @@
-@model  IBlockViewModel<YouTubeBlock>
+@model  YouTubeBlock
 
-<div style="@Model.CurrentBlock.PaddingStyles">
+<div style="@Model.PaddingStyles">
     <div class="row">
-        @if (Model.CurrentBlock.HasHeadingText)
+        @if (Model.HasHeadingText)
         {
             <div class="col-12">
-                <h1 @Html.EditAttributes(x => x.CurrentBlock.Heading)>@Model.CurrentBlock.Heading</h1>
-                @Html.PropertyFor(x => x.CurrentBlock.MainBody)
+                <h1 @Html.EditAttributes(x => x.Heading)>@Model.Heading</h1>
+                @Html.PropertyFor(x => x.MainBody)
             </div>
         }
-        @if (Model.CurrentBlock.HasVideo)
+        @if (Model.HasVideo)
         {
             <div class="col-12">
                 <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="@Model.CurrentBlock.YouTubeLink"></iframe>
+                    <iframe class="embed-responsive-item" src="@Model.YouTubeLink"></iframe>
                 </div>
             </div>
         }

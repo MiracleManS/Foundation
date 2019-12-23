@@ -917,7 +917,6 @@
     <Compile Include="Features\NamedCarts\SharedCart\SharedCartController.cs" />
     <Compile Include="Features\NamedCarts\Wishlist\WishlistController.cs" />
     <Compile Include="Features\Blocks\ContentRecommendationsBlockController.cs" />
-    <Compile Include="Features\Blocks\DefaultBlockController.cs" />
     <Compile Include="Features\Blocks\ElevatedRoleBlockController.cs" />
     <Compile Include="Features\Blocks\PageListBlockController.cs" />
     <Compile Include="Features\Blocks\RecentPageCategoryRecommendationController.cs" />

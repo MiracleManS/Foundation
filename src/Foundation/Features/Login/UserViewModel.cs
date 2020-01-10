@@ -1,4 +1,4 @@
-﻿using Foundation.Commerce.Customer.ViewModels;
+﻿using Foundation.Shared.Web.ViewModels;
 
 namespace Foundation.Features.Login
 {

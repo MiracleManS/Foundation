@@ -12,8 +12,9 @@ using Foundation.Commerce.Models.Blocks;
 using Foundation.Commerce.Models.Pages;
 using Foundation.Commerce.Order.ViewModelFactories;
 using Foundation.Commerce.Order.ViewModels;
-using Mediachase.Commerce.Orders;
-using Mediachase.Commerce.Security;
+// todo: commerce decouple
+//using Mediachase.Commerce.Orders;
+//using Mediachase.Commerce.Security;
 using System;
 using System.Collections.Generic;
 using System.Linq;

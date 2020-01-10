@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Features\MultiShipment\**" />
+    <EmbeddedResource Remove="Features\MultiShipment\**" />
+    <None Remove="Features\MultiShipment\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Features\Stores\Index.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Features\Stores\Index.cshtml" />
+  </ItemGroup>
+  
+</Project>

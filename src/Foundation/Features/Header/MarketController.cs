@@ -3,8 +3,9 @@ using EPiServer.Web.Routing;
 using Foundation.Cms.Extensions;
 using Foundation.Commerce.Markets;
 using Foundation.Commerce.Order.Services;
-using Mediachase.Commerce;
-using Mediachase.Commerce.Markets;
+// todo: commerce decouple
+//using Mediachase.Commerce;
+//using Mediachase.Commerce.Markets;
 using System.Web.Mvc;
 
 namespace Foundation.Features.Header

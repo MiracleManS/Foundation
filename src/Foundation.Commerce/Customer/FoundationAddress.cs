@@ -7,6 +7,7 @@ namespace Foundation.Commerce.Customer
 {
     public class FoundationAddress
     {
+        // todo: CustomAddress needs abstracted.
         public FoundationAddress(CustomerAddress customerAddress) => Address = customerAddress;
 
         public CustomerAddress Address { get; set; }

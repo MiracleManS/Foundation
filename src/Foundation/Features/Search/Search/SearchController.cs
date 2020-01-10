@@ -12,7 +12,8 @@ using Foundation.Find.Cms;
 using Foundation.Find.Cms.ViewModels;
 using Foundation.Find.Commerce;
 using Foundation.Find.Commerce.ViewModels;
-using Mediachase.Commerce.Catalog;
+// todo: commerce decouple
+//using Mediachase.Commerce.Catalog;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -27,7 +28,7 @@ namespace Foundation.Features.Search
         private readonly ICommerceSearchService _commerceSearchService;
         private readonly ICmsSearchService _cmsSearchService;
         private readonly ICommerceTrackingService _recommendationService;
-        private readonly ReferenceConverter _referenceConverter;
+        //private readonly ReferenceConverter _referenceConverter;
         private readonly ICmsTrackingService _cmsTrackingService;
         private readonly HttpContextBase _httpContextBase;
         private readonly IContentLoader _contentLoader;
@@ -36,7 +37,7 @@ namespace Foundation.Features.Search
             ISearchViewModelFactory viewModelFactory,
             ICommerceSearchService searchService,
             ICommerceTrackingService recommendationService,
-            ReferenceConverter referenceConverter,
+            //ReferenceConverter referenceConverter,
             HttpContextBase httpContextBase,
             IContentLoader contentLoader,
             ICmsTrackingService cmsTrackingService,
@@ -45,7 +46,7 @@ namespace Foundation.Features.Search
             _viewModelFactory = viewModelFactory;
             _commerceSearchService = searchService;
             _recommendationService = recommendationService;
-            _referenceConverter = referenceConverter;
+            //_referenceConverter = referenceConverter;
             _cmsTrackingService = cmsTrackingService;
             _httpContextBase = httpContextBase;
             _contentLoader = contentLoader;
@@ -89,13 +90,14 @@ namespace Foundation.Features.Search
                 var notBestBestList = viewModel.ProductViewModels.Where(x => !x.IsBestBetProduct);
                 viewModel.ProductViewModels = bestBestList.Union(notBestBestList);
 
-                if (filterOptions.Page <= 1 && HttpContext.Request.HttpMethod == "GET")
-                {
-                    var trackingResult =
-                        await _recommendationService.TrackSearch(HttpContext, filterOptions.Q, filterOptions.PageSize,
-                            viewModel.ProductViewModels.Select(x => x.Code));
-                    viewModel.Recommendations = trackingResult.GetSearchResultRecommendations(_referenceConverter);
-                }
+                // todo: uncomment for commerce tracking
+                //if (filterOptions.Page <= 1 && HttpContext.Request.HttpMethod == "GET")
+                //{
+                //    var trackingResult =
+                //        await _recommendationService.TrackSearch(HttpContext, filterOptions.Q, filterOptions.PageSize,
+                //            viewModel.ProductViewModels.Select(x => x.Code));
+                //    viewModel.Recommendations = trackingResult.GetSearchResultRecommendations(_referenceConverter);
+                //}
             }
 
             await _cmsTrackingService.SearchedKeyword(_httpContextBase, filterOptions.Q);

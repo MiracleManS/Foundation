@@ -66,9 +66,6 @@
     <Reference Include="AdvancedExternalReviews, Version=0.5.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Advanced.CMS.AdvancedReviews.0.5.1\lib\net45\AdvancedExternalReviews.dll</HintPath>
     </Reference>
-    <Reference Include="AjaxControlToolkit, Version=3.0.30930.28736, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\EPiServer.Commerce.Core.13.12.0\lib\net461\AjaxControlToolkit.dll</HintPath>
-    </Reference>
     <Reference Include="AuthorizeNet, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\AuthorizeNet.1.9.4\lib\AuthorizeNet.dll</HintPath>
     </Reference>
@@ -117,9 +114,6 @@
     <Reference Include="EPiServer.Azure, Version=9.4.5.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <HintPath>..\..\packages\EPiServer.Azure.9.4.5\lib\net461\EPiServer.Azure.dll</HintPath>
     </Reference>
-    <Reference Include="EPiServer.Business.Commerce, Version=13.12.0.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\EPiServer.Commerce.Core.13.12.0\lib\net461\EPiServer.Business.Commerce.dll</HintPath>
-    </Reference>
     <Reference Include="EPiServer.ChangeApproval.Core, Version=1.3.0.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <HintPath>..\..\packages\EPiServer.ChangeApproval.1.3.0\lib\net461\EPiServer.ChangeApproval.Core.dll</HintPath>
     </Reference>
@@ -137,24 +131,6 @@
     </Reference>
     <Reference Include="EPiServer.Cms.UI.AspNetIdentity, Version=11.23.1.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <HintPath>..\..\packages\EPiServer.CMS.UI.AspNetIdentity.11.23.1\lib\net461\EPiServer.Cms.UI.AspNetIdentity.dll</HintPath>
-    </Reference>
-    <Reference Include="EPiServer.Commerce.Azure, Version=13.12.0.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\EPiServer.Commerce.Azure.13.12.0\lib\net461\EPiServer.Commerce.Azure.dll</HintPath>
-    </Reference>
-    <Reference Include="EPiServer.Commerce.Internal.Migration, Version=13.12.0.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\EPiServer.Commerce.Core.13.12.0\lib\net461\EPiServer.Commerce.Internal.Migration.dll</HintPath>
-    </Reference>
-    <Reference Include="EPiServer.Commerce.Reporting, Version=13.12.0.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\EPiServer.Commerce.Core.13.12.0\lib\net461\EPiServer.Commerce.Reporting.dll</HintPath>
-    </Reference>
-    <Reference Include="EPiServer.Commerce.Shell, Version=13.12.0.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\EPiServer.Commerce.UI.13.12.0\lib\net461\EPiServer.Commerce.Shell.dll</HintPath>
-    </Reference>
-    <Reference Include="EPiServer.Commerce.UI, Version=13.12.0.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\EPiServer.Commerce.UI.13.12.0\lib\net461\EPiServer.Commerce.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="EPiServer.Commerce.UI.CustomerService, Version=13.12.0.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\EPiServer.Commerce.UI.CustomerService.13.12.0\lib\net461\EPiServer.Commerce.UI.CustomerService.dll</HintPath>
     </Reference>
     <Reference Include="EPiServer.Configuration, Version=11.14.0.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <HintPath>..\..\packages\EPiServer.CMS.AspNet.11.14.0\lib\net461\EPiServer.Configuration.dll</HintPath>
@@ -206,9 +182,6 @@
     </Reference>
     <Reference Include="EPiServer.Find.Cms, Version=13.2.5.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <HintPath>..\..\packages\EPiServer.Find.Cms.13.2.5\lib\net461\EPiServer.Find.Cms.dll</HintPath>
-    </Reference>
-    <Reference Include="EPiServer.Find.Commerce, Version=11.1.1.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\EPiServer.Find.Commerce.11.1.1\lib\net461\EPiServer.Find.Commerce.dll</HintPath>
     </Reference>
     <Reference Include="EPiServer.Find.Framework, Version=13.2.5.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <HintPath>..\..\packages\EPiServer.Find.Framework.13.2.5\lib\net461\EPiServer.Find.Framework.dll</HintPath>
@@ -279,9 +252,6 @@
     <Reference Include="EPiServer.Marketing.KPI, Version=2.5.2.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <HintPath>..\..\packages\EPiServer.Marketing.KPI.2.5.2\lib\net461\EPiServer.Marketing.KPI.dll</HintPath>
     </Reference>
-    <Reference Include="EPiServer.Marketing.KPI.Commerce, Version=2.4.2.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\EPiServer.Marketing.KPI.Commerce.2.4.2\lib\net461\EPiServer.Marketing.KPI.Commerce.dll</HintPath>
-    </Reference>
     <Reference Include="EPIServer.Marketing.Messaging, Version=1.3.0.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <HintPath>..\..\packages\EPiServer.Marketing.Messaging.1.3.0\lib\net461\EPIServer.Marketing.Messaging.dll</HintPath>
     </Reference>
@@ -315,9 +285,6 @@
     <Reference Include="EPiServer.Personalization.CMS.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <HintPath>..\..\packages\EPiServer.Personalization.CMS.UI.1.0.0\lib\net461\EPiServer.Personalization.CMS.UI.dll</HintPath>
     </Reference>
-    <Reference Include="EPiServer.Personalization.Commerce, Version=3.2.4.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\EPiServer.Personalization.Commerce.3.2.4\lib\net461\EPiServer.Personalization.Commerce.dll</HintPath>
-    </Reference>
     <Reference Include="EPiServer.Personalization.Common, Version=3.1.0.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <HintPath>..\..\packages\EPiServer.Personalization.Common.3.1.0\lib\net461\EPiServer.Personalization.Common.dll</HintPath>
     </Reference>
@@ -332,9 +299,6 @@
     </Reference>
     <Reference Include="EPiServer.ServiceApi, Version=5.4.1.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <HintPath>..\..\packages\EPiServer.ServiceApi.5.4.1\lib\net461\EPiServer.ServiceApi.dll</HintPath>
-    </Reference>
-    <Reference Include="EPiServer.ServiceApi.Commerce, Version=5.4.1.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\EPiServer.ServiceApi.Commerce.5.4.1\lib\net461\EPiServer.ServiceApi.Commerce.dll</HintPath>
     </Reference>
     <Reference Include="EPiServer.ServiceLocation.StructureMap, Version=2.0.3.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\EPiServer.ServiceLocation.StructureMap.2.0.3\lib\net461\EPiServer.ServiceLocation.StructureMap.dll</HintPath>
@@ -479,9 +443,6 @@
     <Reference Include="EPiServer.Tracking.Cms, Version=1.12.0.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <HintPath>..\..\packages\EPiServer.Tracking.Cms.1.12.0\lib\net461\EPiServer.Tracking.Cms.dll</HintPath>
     </Reference>
-    <Reference Include="EPiServer.Tracking.Commerce, Version=3.2.4.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\EPiServer.Tracking.Commerce.3.2.4\lib\net461\EPiServer.Tracking.Commerce.dll</HintPath>
-    </Reference>
     <Reference Include="EPiServer.Tracking.Core, Version=1.12.0.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <HintPath>..\..\packages\EPiServer.Tracking.Core.1.12.0\lib\net461\EPiServer.Tracking.Core.dll</HintPath>
     </Reference>
@@ -544,57 +505,6 @@
     </Reference>
     <Reference Include="MaxMind.GeoIP2, Version=3.0.0.0, Culture=neutral, PublicKeyToken=66afa4cc5ae853ac, processorArchitecture=MSIL">
       <HintPath>..\..\packages\MaxMind.GeoIP2.3.0.0\lib\net45\MaxMind.GeoIP2.dll</HintPath>
-    </Reference>
-    <Reference Include="Mediachase.BusinessFoundation, Version=13.12.0.0, Culture=neutral, PublicKeyToken=41d2e7a615ba286c, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\EPiServer.Commerce.Core.13.12.0\lib\net461\Mediachase.BusinessFoundation.dll</HintPath>
-    </Reference>
-    <Reference Include="Mediachase.BusinessFoundation.Data, Version=13.12.0.0, Culture=neutral, PublicKeyToken=41d2e7a615ba286c, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\EPiServer.Commerce.Core.13.12.0\lib\net461\Mediachase.BusinessFoundation.Data.dll</HintPath>
-    </Reference>
-    <Reference Include="Mediachase.Commerce, Version=13.12.0.0, Culture=neutral, PublicKeyToken=6e58b501b34abce3, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\EPiServer.Commerce.Core.13.12.0\lib\net461\Mediachase.Commerce.dll</HintPath>
-    </Reference>
-    <Reference Include="Mediachase.Commerce.Plugins.Payment, Version=13.12.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\EPiServer.Commerce.Core.13.12.0\lib\net461\Mediachase.Commerce.Plugins.Payment.dll</HintPath>
-    </Reference>
-    <Reference Include="Mediachase.Commerce.Plugins.Shipping, Version=13.12.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\EPiServer.Commerce.Core.13.12.0\lib\net461\Mediachase.Commerce.Plugins.Shipping.dll</HintPath>
-    </Reference>
-    <Reference Include="Mediachase.Commerce.Website, Version=13.12.0.0, Culture=neutral, PublicKeyToken=6e58b501b34abce3, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\EPiServer.Commerce.Core.13.12.0\lib\net461\Mediachase.Commerce.Website.dll</HintPath>
-    </Reference>
-    <Reference Include="Mediachase.Commerce.Workflow, Version=13.12.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\EPiServer.Commerce.Core.13.12.0\lib\net461\Mediachase.Commerce.Workflow.dll</HintPath>
-    </Reference>
-    <Reference Include="Mediachase.DataProvider, Version=13.12.0.0, Culture=neutral, PublicKeyToken=41d2e7a615ba286c, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\EPiServer.Commerce.Core.13.12.0\lib\net461\Mediachase.DataProvider.dll</HintPath>
-    </Reference>
-    <Reference Include="Mediachase.FileUploader, Version=13.12.0.0, Culture=neutral, PublicKeyToken=41d2e7a615ba286c, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\EPiServer.Commerce.Core.13.12.0\lib\net461\Mediachase.FileUploader.dll</HintPath>
-    </Reference>
-    <Reference Include="Mediachase.MetaDataPlus, Version=13.12.0.0, Culture=neutral, PublicKeyToken=41d2e7a615ba286c, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\EPiServer.Commerce.Core.13.12.0\lib\net461\Mediachase.MetaDataPlus.dll</HintPath>
-    </Reference>
-    <Reference Include="Mediachase.Search, Version=13.12.0.0, Culture=neutral, PublicKeyToken=6e58b501b34abce3, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\EPiServer.Commerce.Core.13.12.0\lib\net461\Mediachase.Search.dll</HintPath>
-    </Reference>
-    <Reference Include="Mediachase.Search.Extensions, Version=13.12.0.0, Culture=neutral, PublicKeyToken=6e58b501b34abce3, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\EPiServer.Commerce.Core.13.12.0\lib\net461\Mediachase.Search.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="Mediachase.Search.Extensions.Azure, Version=13.12.0.0, Culture=neutral, PublicKeyToken=6e58b501b34abce3, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\EPiServer.Commerce.Azure.13.12.0\lib\net461\Mediachase.Search.Extensions.Azure.dll</HintPath>
-    </Reference>
-    <Reference Include="Mediachase.Search.LuceneAzureSearchProvider, Version=13.12.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\EPiServer.Commerce.Azure.13.12.0\lib\net461\Mediachase.Search.LuceneAzureSearchProvider.dll</HintPath>
-    </Reference>
-    <Reference Include="Mediachase.Search.LuceneSearchProvider, Version=13.12.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\EPiServer.Commerce.Core.13.12.0\lib\net461\Mediachase.Search.LuceneSearchProvider.dll</HintPath>
-    </Reference>
-    <Reference Include="Mediachase.SqlDataProvider, Version=13.12.0.0, Culture=neutral, PublicKeyToken=41d2e7a615ba286c, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\EPiServer.Commerce.Core.13.12.0\lib\net461\Mediachase.SqlDataProvider.dll</HintPath>
-    </Reference>
-    <Reference Include="Mediachase.WebConsoleLib, Version=13.12.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\EPiServer.Commerce.Core.13.12.0\lib\net461\Mediachase.WebConsoleLib.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Microsoft.AspNet.Identity.Core.2.2.3\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
@@ -852,8 +762,6 @@
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <ItemGroup>
     <Compile Include="Attributes\OnlyAnonymousAttribute.cs" />
-    <Compile Include="Features\Api\AuthorizedApiController.cs" />
-    <Compile Include="Features\Api\PublicApiController.cs" />
     <Compile Include="Features\Blocks\AssetsDownloadLinksBlockController.cs" />
     <Compile Include="Features\Blocks\BreadcrumbBlockController.cs" />
     <Compile Include="Features\Blocks\CarouselBlockController.cs" />
@@ -872,11 +780,6 @@
     <Compile Include="Features\Blog\BlogListPage\BlogListPageController.cs" />
     <Compile Include="Features\Pages\CommunityPage\CommunittyPageController.cs" />
     <Compile Include="Infrastructure\PostClickInterceptor.cs" />
-    <Compile Include="Features\CatalogContent\CatalogContentControllerBase.cs" />
-    <Compile Include="Features\CatalogContent\Variation\VariationController.cs" />
-    <Compile Include="Features\Category\StandardCategoryController.cs" />
-    <Compile Include="Features\Checkout\CheckoutController.cs" />
-    <Compile Include="Features\Checkout\ConfirmationMail\OrderConfirmationMailController.cs" />
     <Compile Include="Features\Events\CalendarBlock\CalendarBlockController.cs" />
     <Compile Include="Features\Events\CalendarEvent\CalendarEventController.cs" />
     <Compile Include="Features\Header\HeaderController.cs" />
@@ -889,33 +792,6 @@
     <Compile Include="Features\Login\UserViewModel.cs" />
     <Compile Include="Features\Login\UserController.cs" />
     <Compile Include="Features\Media\MediaController.cs" />
-    <Compile Include="Features\MyAccount\AddressBook\AddressBookController.cs" />
-    <Compile Include="Features\MyAccount\ResetPassword\ResetPasswordController.cs" />
-    <Compile Include="Features\MyOrganization\B2BNavigationController.cs" />
-    <Compile Include="Features\MyAccount\Bookmarks\BookmarksController.cs" />
-    <Compile Include="Features\MyOrganization\Budgeting\BudgetingController.cs" />
-    <Compile Include="Features\MyAccount\CreditCard\CreditCardController.cs" />
-    <Compile Include="Features\MyAccount\GiftCardPage\GiftCardPageController.cs" />
-    <Compile Include="Features\MyAccount\OrderConfirmation\OrderConfirmationController.cs" />
-    <Compile Include="Features\MyAccount\OrderConfirmation\OrderConfirmationControllerBase.cs" />
-    <Compile Include="Features\MyAccount\OrderDetails\OrderDetailsController.cs" />
-    <Compile Include="Features\MyAccount\OrderHistory\OrderHistoryController.cs" />
-    <Compile Include="Features\MyAccount\OrderHistoryBlock\OrderHistoryBlockController.cs" />
-    <Compile Include="Features\MyOrganization\Orders\OrdersController.cs" />
-    <Compile Include="Features\MyOrganization\Organization\OrganizationController.cs" />
-    <Compile Include="Features\MyAccount\ProfilePage\ProfilePageController.cs" />
-    <Compile Include="Features\MyAccount\ProfilePage\SocialCommerceProfilePageViewModel.cs" />
-    <Compile Include="Features\MyOrganization\QuickOrderBlock\QuickOrderBlockController.cs" />
-    <Compile Include="Features\MyOrganization\QuickOrderPage\QuickOrderPageController.cs" />
-    <Compile Include="Features\MyOrganization\SubOrganization\SubOrganizationController.cs" />
-    <Compile Include="Features\MyAccount\SubscriptionDetail\SubscriptionDetailController.cs" />
-    <Compile Include="Features\MyAccount\SubscriptionHistory\SubscriptionHistoryController.cs" />
-    <Compile Include="Features\MyOrganization\Users\UsersController.cs" />
-    <Compile Include="Features\NamedCarts\ChangeCartJsonResult.cs" />
-    <Compile Include="Features\NamedCarts\DefaultCart\DefaultCartController.cs" />
-    <Compile Include="Features\NamedCarts\OrderPadsPage\OrderPadsPageController.cs" />
-    <Compile Include="Features\NamedCarts\SharedCart\SharedCartController.cs" />
-    <Compile Include="Features\NamedCarts\Wishlist\WishlistController.cs" />
     <Compile Include="Features\Blocks\ContentRecommendationsBlockController.cs" />
     <Compile Include="Features\Blocks\DefaultBlockController.cs" />
     <Compile Include="Features\Blocks\ElevatedRoleBlockController.cs" />
@@ -931,21 +807,9 @@
     <Compile Include="Features\Pages\TwoColumnLandingPage\TwoColumnLandingPageController.cs" />
     <Compile Include="Features\Preview\PreviewController.cs" />
     <Compile Include="Features\Preview\PreviewModel.cs" />
-    <Compile Include="Features\CatalogContent\Package\PackageController.cs" />
-    <Compile Include="Features\CatalogContent\Product\ProductPartialController.cs" />
-    <Compile Include="Features\CatalogContent\Bundle\BundleController.cs" />
-    <Compile Include="Features\CatalogContent\Product\ProductController.cs" />
-    <Compile Include="Features\Recommendations\RecommendationsController.cs" />
-    <Compile Include="Features\MyAccount\MyAccountNavigationController.cs" />
-    <Compile Include="Features\Recommendations\WidgetBlock\WidgetBlockController.cs" />
-    <Compile Include="Features\Search\Category\CategoryController.cs" />
-    <Compile Include="Features\Search\Category\CategoryPartialController.cs" />
-    <Compile Include="Features\Search\ProductSearchBlock\ProductSearchBlockController.cs" />
     <Compile Include="Features\Search\Search\SearchController.cs" />
     <Compile Include="Features\Setup\SetupController.cs" />
     <Compile Include="Features\Setup\SetupViewModel.cs" />
-    <Compile Include="Features\MyAccount\IdentityControllerBase.cs" />
-    <Compile Include="Features\Stores\StorePageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -1252,29 +1116,16 @@
     <Content Include="Features\Blocks\Views\MembershipDisplayBlock.cshtml" />
     <Content Include="Features\Blocks\Views\RatingBlock.cshtml" />
     <Content Include="Features\Blocks\Views\SubscriptionBlock.cshtml" />
-    <Content Include="Features\Checkout\_Coupon.cshtml" />
-    <Content Include="Features\CatalogContent\_SocialIconsListing.cshtml" />
-    <Content Include="Features\CatalogContent\_BuyNow.cshtml" />
-    <Content Include="Features\Category\Index.cshtml" />
-    <Content Include="Features\Category\_PageListing.cshtml" />
-    <Content Include="Features\Category\_Preview.cshtml" />
     <Content Include="Features\Blog\BlogListPage\_BlogList.cshtml" />
     <Content Include="Features\Blog\BlogListPage\_GridTemplate.cshtml" />
     <Content Include="Features\Blog\BlogListPage\Preview.cshtml" />
-    <Content Include="Features\Checkout\ConfirmationMail\Index.cshtml" />
     <Content Include="Assets\scss\templates\blocks\_calendar-block.scss" />
     <Content Include="Features\Blocks\Views\_PageListPreview.cshtml" />
     <Content Include="Assets\scss\templates\pages\_login.scss" />
-    <Content Include="Features\Checkout\Checkout.cshtml" />
     <Content Include="Assets\scss\templates\pages\_one-page-checkout.scss" />
     <Content Include="Features\Blocks\Views\NavigationBlock.cshtml" />
     <Content Include="Features\Blocks\Views\BreadcrumbBlock.cshtml" />
     <Content Include="Assets\scss\templates\blocks\_breadcrumb-block.scss" />
-    <Content Include="Features\Checkout\_OrderSummary.cshtml" />
-    <Content Include="Features\CatalogContent\_Rating.cshtml" />
-    <Content Include="Features\MyOrganization\Orders\Index.cshtml" />
-    <Content Include="Features\NamedCarts\Wishlist\Index.cshtml" />
-    <Content Include="Features\Search\Category\Index.cshtml" />
     <Content Include="Features\Shared\Foundation\ElementBlocks\ChoiceElementBlock.ascx" />
     <Content Include="Features\Shared\Foundation\ElementBlocks\FormContainerBlock.ascx" />
     <Content Include="Features\Shared\Foundation\ElementBlocks\SelectionElementBlock.ascx" />
@@ -1360,9 +1211,6 @@
     <Content Include="modules\_protected\VisualCompareMode\EpiServerOverridenLibs\customWidgetSwitcher.js" />
     <Content Include="Features\Blog\BlogCommentBlock\Index.cshtml" />
     <Content Include="modules\_protected\EPiServer.Personalization.CMS.UI\EPiServer.Personalization.CMS.UI.zip" />
-    <Content Include="Features\NamedCarts\SharedCart\Index.cshtml" />
-    <Content Include="Features\NamedCarts\OrderPadsPage\Index.cshtml" />
-    <Content Include="Features\NamedCarts\DefaultCart\LargeCart.cshtml" />
     <Content Include="Features\Shared\Foundation\Header\_HeaderCart.cshtml" />
     <Content Include="Features\Shared\Foundation\_AddressSummaryLine.cshtml" />
     <Content Include="NotFound.aspx" />
@@ -1564,36 +1412,17 @@
     <Content Include="Features\Events\CalendarEvent\Index.cshtml" />
     <Content Include="Features\Events\CalendarBlock\Index.cshtml" />
     <Content Include="Features\Events\CalendarBlock\Agenda.cshtml" />
-    <Content Include="Features\CatalogContent\Product\Index.cshtml" />
-    <Content Include="Features\CatalogContent\Product\_QuickView.cshtml" />
     <Content Include="Features\Shared\Foundation\_Product.cshtml" />
-    <Content Include="Features\Recommendations\Index.cshtml" />
     <Content Include="Features\Blog\BlogListPage\Index.cshtml" />
     <Content Include="Features\Blog\BlogItem\Index.cshtml" />
-    <Content Include="Features\MyAccount\AccountInformation\Index.cshtml" />
-    <Content Include="Features\MyAccount\CreditCard\EditForm.cshtml" />
-    <Content Include="Features\MyAccount\CreditCard\Index.cshtml" />
-    <Content Include="Features\MyAccount\GiftCardPage\Index.cshtml" />
-    <Content Include="Features\MyAccount\ProfilePage\Index.cshtml" />
-    <Content Include="Features\MyAccount\AddressBook\EditAddress.cshtml" />
-    <Content Include="Features\MyAccount\AddressBook\EditForm.cshtml" />
-    <Content Include="Features\MyAccount\AddressBook\Index.cshtml" />
-    <Content Include="Features\MyAccount\AddressBook\ModalAddressDialog.cshtml" />
-    <Content Include="Features\MyAccount\OrderHistory\Index.cshtml" />
-    <Content Include="Features\MyAccount\OrderHistoryBlock\Index.cshtml" />
     <Content Include="Features\Shared\Foundation\_WishListMiniCartDetails.cshtml" />
     <Content Include="Features\Shared\Foundation\_AddressRegion.cshtml" />
-    <Content Include="Features\MyAccount\SubscriptionDetail\Index.cshtml" />
-    <Content Include="Features\MyAccount\SubscriptionHistory\Index.cshtml" />
     <Content Include="Features\Shared\Foundation\_Address.cshtml" />
     <Content Include="Features\Search\_QuickSearch.cshtml" />
     <Content Include="Features\Search\_QuickSearchAll.cshtml" />
     <Content Include="Features\Search\_QuickSearchContent.cshtml" />
     <Content Include="Features\Search\_SearchContent.cshtml" />
     <Content Include="Features\Search\Search\Index.cshtml" />
-    <Content Include="Features\Search\ProductSearchBlock\Index.cshtml" />
-    <Content Include="Features\Search\ProductSearchBlock\EmptyResult.cshtml" />
-    <Content Include="Features\Search\ProductSearchBlock\FindError.cshtml" />
     <Content Include="Features\Preview\Index.cshtml" />
     <Content Include="Features\Shared\Foundation\Header\_Navigation.cshtml" />
     <Content Include="Features\Shared\Foundation\Header\_MobileNavigation.cshtml" />
@@ -1634,42 +1463,16 @@
     <Content Include="Features\Search\_FacetContent.cshtml" />
     <Content Include="Features\Search\_RecentlyBrowsed.cshtml" />
     <Content Include="Features\Search\_Toolbar.cshtml" />
-    <Content Include="Features\MyAccount\_ProfileSidebar.cshtml" />
-    <Content Include="Features\Stores\Index.cshtml" />
     <Content Include="Features\Blocks\Views\MembershipAffiliationBlock.cshtml" />
-    <Content Include="Features\NamedCarts\Wishlist\_WishlistListItem.cshtml" />
     <Content Include="Features\Shared\Foundation\_Store.cshtml" />
-    <Content Include="Features\MyAccount\Bookmarks\Index.cshtml" />
-    <Content Include="Features\CatalogContent\Product\_ProductDetail.cshtml" />
     <Content Include="Features\Shared\Foundation\Header\_MiniWishlistItems.cshtml" />
     <Content Include="Features\Shared\Foundation\Header\_MiniCartItems.cshtml" />
-    <Content Include="Features\NamedCarts\DefaultCart\_CartItems.cshtml" />
-    <Content Include="Features\NamedCarts\DefaultCart\_ProcessCart.cshtml" />
-    <Content Include="Features\NamedCarts\DefaultCart\_ItemTemplate.cshtml" />
     <Content Include="modules\_protected\EPiServer.Forms\Forms.config" />
     <Content Include="module.config" />
     <Content Include="Features\Blocks\Views\MenuItemBlock.cshtml" />
-    <Content Include="Features\Checkout\Index.cshtml" />
-    <Content Include="Features\Checkout\SingleAddress.cshtml" />
-    <Content Include="Features\Checkout\CheckoutMethod.cshtml" />
     <Content Include="Features\Shared\Foundation\DisplayTemplates\CountryRegionViewModel.cshtml" />
     <Content Include="Features\Shared\Foundation\EditorTemplates\CountryRegionViewModel.cshtml" />
     <Content Include="Features\Shared\Foundation\DisplayTemplates\CountryOptions.cshtml" />
-    <Content Include="Features\Checkout\ShippingInformation.cshtml" />
-    <Content Include="Features\Checkout\BillingInformation.cshtml" />
-    <Content Include="Features\Checkout\Payment.cshtml" />
-    <Content Include="Features\Checkout\Subscription.cshtml" />
-    <Content Include="Features\Checkout\PlaceOrder.cshtml" />
-    <Content Include="Features\Checkout\_CashOnDeliveryPaymentMethod.cshtml" />
-    <Content Include="Features\Checkout\_AddPayment.cshtml" />
-    <Content Include="Features\Checkout\_BudgetPaymentPaymentMethod.cshtml" />
-    <Content Include="Features\Checkout\_GenericCreditCardPaymentMethod.cshtml" />
-    <Content Include="Features\Checkout\_GiftCardPaymentPaymentMethod.cshtml" />
-    <Content Include="Features\MyAccount\OrderConfirmation\Index.cshtml" />
-    <Content Include="Features\MyAccount\OrderConfirmation\_BudgetPaymentConfirmation.cshtml" />
-    <Content Include="Features\MyAccount\OrderConfirmation\_CashOnDeliveryConfirmation.cshtml" />
-    <Content Include="Features\MyAccount\OrderConfirmation\_GenericCreditCardConfirmation.cshtml" />
-    <Content Include="Features\MyAccount\OrderConfirmation\_GiftCardPaymentConfirmation.cshtml" />
     <Content Include="Features\Shared\Foundation\Header\_MobileMiniCart.cshtml" />
     <Content Include="Features\Shared\Foundation\Header\_MobileMiniWishlist.cshtml" />
     <Content Include="Features\Shared\Foundation\Header\_MobileUsers.cshtml" />
@@ -1679,36 +1482,10 @@
     <Content Include="Features\Pages\SalesPage\Index.cshtml" />
     <Content Include="Features\Shared\Foundation\_Page.cshtml" />
     <Content Include="Features\Shared\Foundation\_Promotion.cshtml" />
-    <Content Include="Features\MyAccount\OrderDetails\Index.cshtml" />
-    <Content Include="Features\MyAccount\OrderDetails\_ItemTemplate.cshtml" />
-    <Content Include="Features\MyAccount\OrderDetails\_QuoteNotes.cshtml" />
-    <Content Include="Features\MyAccount\OrderDetails\_Discounts.cshtml" />
-    <Content Include="Features\MyOrganization\Budgeting\AddBudget.cshtml" />
-    <Content Include="Features\MyOrganization\Budgeting\AddBudgetToUser.cshtml" />
-    <Content Include="Features\MyOrganization\Budgeting\EditBudget.cshtml" />
-    <Content Include="Features\MyOrganization\Budgeting\EditUserBudget.cshtml" />
-    <Content Include="Features\MyOrganization\Budgeting\Index.cshtml" />
-    <Content Include="Features\MyOrganization\_B2BNavigation.cshtml" />
     <Content Include="Features\Shared\Foundation\Header\_MiniSharedCart.cshtml" />
     <Content Include="Features\Shared\Foundation\Header\_MiniSharedCartItems.cshtml" />
     <Content Include="Features\Shared\Foundation\Header\_MobileMiniSharedCart.cshtml" />
     <Content Include="Features\Shared\Foundation\Header\_MobileMiniSharedCartItems.cshtml" />
-    <Content Include="Features\MyOrganization\Organization\AddSub.cshtml" />
-    <Content Include="Features\MyOrganization\Organization\Edit.cshtml" />
-    <Content Include="Features\MyOrganization\Organization\Index.cshtml" />
-    <Content Include="Features\MyOrganization\SubOrganization\Edit.cshtml" />
-    <Content Include="Features\MyOrganization\SubOrganization\Index.cshtml" />
-    <Content Include="Features\MyOrganization\QuickOrderBlock\Index.cshtml" />
-    <Content Include="Features\MyOrganization\QuickOrderPage\Index.cshtml" />
-    <Content Include="Features\MyOrganization\Users\AddUser.cshtml" />
-    <Content Include="Features\MyOrganization\Users\EditUser.cshtml" />
-    <Content Include="Features\MyOrganization\Users\Index.cshtml" />
-    <Content Include="Features\CatalogContent\Bundle\_Quickview.cshtml" />
-    <Content Include="Features\CatalogContent\Bundle\Index.cshtml" />
-    <Content Include="Features\CatalogContent\Package\Index.cshtml" />
-    <Content Include="Features\CatalogContent\Package\_PackageDetail.cshtml" />
-    <Content Include="Features\CatalogContent\Bundle\BundleWithoutEntries.cshtml" />
-    <Content Include="Features\CatalogContent\Bundle\_BundleDetail.cshtml" />
     <Content Include="Features\Shared\Foundation\_QuickViewModal.cshtml" />
     <Content Include="Features\Locations\LocationListPage\FilterActivitiesBlock.cshtml" />
     <Content Include="Features\Locations\LocationListPage\FilterContinentsBlock.cshtml" />
@@ -1717,20 +1494,8 @@
     <Content Include="Features\Shared\Foundation\_MasterLayout.cshtml" />
     <Content Include="Features\Shared\Foundation\_ReviewForm.cshtml" />
     <Content Include="Features\Shared\Foundation\_Reviews.cshtml" />
-    <Content Include="Features\CatalogContent\Package\PackageWithoutEntries.cshtml" />
-    <Content Include="Features\CatalogContent\Package\_Quickview.cshtml" />
-    <Content Include="Features\CatalogContent\Variation\Index.cshtml" />
-    <Content Include="Features\CatalogContent\Variation\_VariantDetail.cshtml" />
-    <Content Include="Features\CatalogContent\Product\ProductWithourEntries.cshtml" />
-    <Content Include="Features\CatalogContent\_ListVariants.cshtml" />
     <Content Include="Features\Media\Index.cshtml" />
-    <Content Include="Features\MyAccount\ResetPassword\ForgotPassword.cshtml" />
-    <Content Include="Features\MyAccount\ResetPassword\ForgotPasswordConfirmation.cshtml" />
-    <Content Include="Features\MyAccount\ResetPassword\ResetPassword.cshtml" />
-    <Content Include="Features\MyAccount\ResetPassword\ResetPasswordConfirmation.cshtml" />
     <Content Include="Features\Shared\Foundation\_BreadCrumb.cshtml" />
-    <Content Include="Features\CatalogContent\_Images.cshtml" />
-    <Content Include="Features\Checkout\EmptyCart.cshtml" />
     <Content Include="modules\_protected\Foundation.Cms\module.config" />
     <Content Include="modules\_protected\Foundation.Cms\Views\BulkUpdate\Index.cshtml" />
     <Content Include="modules\_protected\Foundation.Cms\Views\Shared\_ShellLayout.cshtml" />
@@ -1753,7 +1518,6 @@
     <Content Include="modules\_protected\Foundation.Social\Views\_viewstart.cshtml" />
     <Content Include="Features\Shared\Foundation\_ReviewItem.cshtml" />
     <Content Include="modules\_protected\EPiServer.ChangeApproval\EPiServer.ChangeApproval.zip" />
-    <Content Include="Features\NamedCarts\DefaultCart\_CartSummary.cshtml" />
     <Content Include="modules\_protected\geta-epicategories\geta-epicategories.zip" />
     <Content Include="modules\_protected\BVNetwork.404Handler\BVNetwork.404Handler.zip" />
     <Content Include="modules\_protected\EPiServer.Cms.TinyMce\web.config" />
@@ -1777,8 +1541,6 @@
     <Content Include="modules\_protected\CmsAudit\Views\CmsAudit\BlockTypes.cshtml" />
     <Content Include="modules\_protected\CmsAudit\Views\CmsAudit\BlockTypeAudit.cshtml" />
     <Content Include="modules\_protected\CmsAudit\module.config" />
-    <Content Include="Features\Recommendations\WidgetBlock\Index.cshtml" />
-    <Content Include="modules\_protected\EPiServer.Marketing.KPI.Commerce\EPiServer.Marketing.KPI.Commerce.zip" />
     <Content Include="modules\_protected\EPiServer.Social\Views\Web.config" />
     <Content Include="modules\_protected\EPiServer.Social\module.config" />
     <Content Include="modules\_protected\EPiServer.Social\EPiServerSocial.config" />
@@ -1789,9 +1551,6 @@
     <Content Include="modules\_protected\advanced-cms.Reviews\advanced-cms.Reviews.zip" />
     <Content Include="modules\_protected\advanced-cms.ExternalReviews\web.config" />
     <Content Include="modules\_protected\advanced-cms.ExternalReviews\advanced-cms.ExternalReviews.zip" />
-    <Content Include="modules\_protected\EPiServer.Commerce.Shell\EPiServer.Commerce.Shell.zip" />
-    <Content Include="modules\_protected\Commerce\Commerce.zip" />
-    <Content Include="modules\_protected\EPiServer.Commerce.UI.CustomerService\EPiServer.Commerce.UI.CustomerService.zip" />
     <Content Include="Features\Login\Index.cshtml" />
     <Content Include="Features\Shared\Foundation\_LoginLayout.cshtml" />
     <Content Include="Features\Login\Register.cshtml" />
@@ -1814,10 +1573,7 @@
     <Content Include="Features\Blocks\Views\OrderSearchBlock.cshtml" />
     <Content Include="Assets\scss\templates\blocks\_order-search-block.scss" />
     <Content Include="Features\Blocks\Views\_OrderSearchListing.cshtml" />
-    <Content Include="Features\MyOrganization\_MyOrganizationLayout.cshtml" />
-    <Content Include="Features\MyAccount\_MyAccountLayout.cshtml" />
     <Content Include="Features\Blocks\Views\CarouselBlock.cshtml" />
-    <Content Include="Features\MyAccount\OrderHistory\_OrderFilterBox.cshtml" />
     <Content Include="connectionStrings.template.config" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
@@ -1857,14 +1613,6 @@
       <Project>{c9638f52-7402-446d-bf89-993686e26a52}</Project>
       <Name>Foundation.Cms</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Foundation.Commerce.Personalization\Foundation.Commerce.Personalization.csproj">
-      <Project>{1172550b-7582-43b9-b6f3-17702c7d851e}</Project>
-      <Name>Foundation.Commerce.Personalization</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Foundation.Commerce\Foundation.Commerce.csproj">
-      <Project>{709628b7-2f85-404b-8d1c-27e6da3bcc0f}</Project>
-      <Name>Foundation.Commerce</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Foundation.Demo\Foundation.Demo.csproj">
       <Project>{08ffad15-f974-435d-a6d1-8b0c8069594f}</Project>
       <Name>Foundation.Demo</Name>
@@ -1873,9 +1621,9 @@
       <Project>{07c19549-7028-4cba-ba73-fadd93be8e5a}</Project>
       <Name>Foundation.Find.Cms</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Foundation.Find.Commerce\Foundation.Find.Commerce.csproj">
-      <Project>{61b070fb-1343-465b-9c3b-14dd8c7722e9}</Project>
-      <Name>Foundation.Find.Commerce</Name>
+    <ProjectReference Include="..\Foundation.Shared\Foundation.Shared.csproj">
+      <Project>{abb75aba-6d06-4753-9d39-290b9ba4e2d9}</Project>
+      <Name>Foundation.Shared</Name>
     </ProjectReference>
     <ProjectReference Include="..\Foundation.Social\Foundation.Social.csproj">
       <Project>{7b1624a8-cb7a-4c32-acb2-397d6049bb1b}</Project>

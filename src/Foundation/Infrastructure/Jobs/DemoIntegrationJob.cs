@@ -1,13 +1,15 @@
 ﻿using EPiServer;
-using EPiServer.Commerce.Catalog.ContentTypes;
+// todo: commerce decouple
+//using EPiServer.Commerce.Catalog.ContentTypes;
 using EPiServer.Core;
 using EPiServer.PlugIn;
 using EPiServer.Scheduler;
 using EPiServer.Security;
 using Foundation.Commerce.Models.Catalog;
-using Mediachase.Commerce.Catalog;
-using Mediachase.Commerce.Inventory;
-using Mediachase.Commerce.InventoryService;
+// todo: commerce decouple
+//using Mediachase.Commerce.Catalog;
+//using Mediachase.Commerce.Inventory;
+//using Mediachase.Commerce.InventoryService;
 using System;
 using System.Collections.Generic;
 using System.Data;

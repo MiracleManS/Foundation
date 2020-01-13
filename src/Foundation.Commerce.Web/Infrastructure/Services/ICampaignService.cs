@@ -1,4 +1,4 @@
-namespace Foundation.Infrastructure.Services
+namespace Foundation.Commerce.Infrastructure.Services
 {
     public interface ICampaignService
     {

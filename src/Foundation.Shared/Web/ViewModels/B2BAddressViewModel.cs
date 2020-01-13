@@ -1,4 +1,5 @@
 using Foundation.Cms.Attributes;
+using Foundation.Shared.Customer;
 using System;
 using System.Collections.Generic;
 
@@ -6,7 +7,7 @@ namespace Foundation.Shared.Web.ViewModels
 {
     public class B2BAddressViewModel
     {
-        public B2BAddressViewModel(FoundationAddress address)
+        public B2BAddressViewModel(IFoundationAddress address)
         {
             AddressId = address.AddressId;
             Name = address.Name;

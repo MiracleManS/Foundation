@@ -1,3 +1,4 @@
+using Foundation.Shared.Customer;
 using Mediachase.BusinessFoundation.Data;
 using Mediachase.Commerce.Customers;
 using System;
@@ -6,42 +7,45 @@ using System.Linq;
 
 namespace Foundation.Commerce.Customer
 {
-    public class FoundationOrganization
+    public class FoundationOrganization : IFoundationOrganization
     {
-        public FoundationOrganization(Organization organization) => OrganizationEntity = organization;
+        private readonly Organization _organizationEntity;
+        private IFoundationAddress _address;
 
-        public Organization OrganizationEntity { get; set; }
+        public FoundationOrganization(Organization organization) => _organizationEntity = organization;
 
         public Guid OrganizationId
         {
-            get => OrganizationEntity.PrimaryKeyId ?? Guid.Empty;
-            set => OrganizationEntity.PrimaryKeyId = (PrimaryKeyId?)value;
+            get => _organizationEntity.PrimaryKeyId ?? Guid.Empty;
+            set => _organizationEntity.PrimaryKeyId = (PrimaryKeyId?)value;
         }
 
         public string Name
         {
-            get => OrganizationEntity.Name;
-            set => OrganizationEntity.Name = value;
+            get => _organizationEntity.Name;
+            set => _organizationEntity.Name = value;
         }
 
-        public FoundationAddress Address => Addresses != null && Addresses.Any() ? Addresses.FirstOrDefault() : null;
+        public IFoundationAddress Address => _address = _address ?? Addresses.FirstOrDefault();
 
-        public List<FoundationAddress> Addresses => OrganizationEntity.Addresses != null && OrganizationEntity.Addresses.Any()
-            ? OrganizationEntity.Addresses.Select(address => new FoundationAddress(address)).ToList()
-            : new List<FoundationAddress>();
+        public List<IFoundationAddress> Addresses =>
+            _organizationEntity.Addresses?.Any() == true
+            ? _organizationEntity.Addresses.Select(address => new FoundationAddress(address) as IFoundationAddress).ToList()
+            : new List<IFoundationAddress>();
 
-        public List<FoundationOrganization> SubOrganizations => OrganizationEntity.ChildOrganizations.Select(
-                        childOrganization => new FoundationOrganization(childOrganization)).ToList();
+        public List<IFoundationOrganization> SubOrganizations => _organizationEntity.ChildOrganizations
+            .Select(childOrganization => new FoundationOrganization(childOrganization) as IFoundationOrganization)
+            .ToList();
 
         public Guid ParentOrganizationId
         {
-            get => OrganizationEntity.ParentId ?? Guid.Empty;
-            set => OrganizationEntity.ParentId = (PrimaryKeyId?)value;
+            get => _organizationEntity.ParentId ?? Guid.Empty;
+            set => _organizationEntity.ParentId = (PrimaryKeyId?)value;
         }
 
-        public FoundationOrganization ParentOrganization { get; set; }
+        public IFoundationOrganization ParentOrganization { get; set; }
 
-        public void SaveChanges() => OrganizationEntity.SaveChanges();
+        public void SaveChanges() => _organizationEntity.SaveChanges();
 
         public static FoundationOrganization New() => new FoundationOrganization(Organization.CreateInstance());
     }

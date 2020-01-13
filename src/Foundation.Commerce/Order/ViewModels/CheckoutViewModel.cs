@@ -3,6 +3,7 @@ using Foundation.Cms.ViewModels;
 using Foundation.Commerce.Customer.ViewModels;
 using Foundation.Commerce.Models.Pages;
 using Foundation.Commerce.Order.Payments;
+using Foundation.Shared.Web.ViewModels;
 using Mediachase.Commerce;
 using Mediachase.Commerce.Orders;
 using System;

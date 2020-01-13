@@ -1,5 +1,6 @@
 using Foundation.Cms.Pages;
 using Foundation.Cms.ViewModels;
+using Foundation.Web.ViewModels;
 using System.Collections.Generic;
 
 namespace Foundation.Commerce.Customer.ViewModels

@@ -1,7 +1,7 @@
 using EPiServer.Commerce.Order;
 using Foundation.Cms.Pages;
 using Foundation.Cms.ViewModels;
-using Foundation.Commerce.Customer.ViewModels;
+using Foundation.Shared.Web.ViewModels;
 using Mediachase.Commerce;
 using System;
 using System.Collections.Generic;
@@ -10,10 +10,7 @@ namespace Foundation.Commerce.Order.ViewModels
 {
     public class OrderConfirmationViewModel<T> : ContentViewModel<T> where T : FoundationPageData
     {
-        public OrderConfirmationViewModel(T orderConfirmationPage) : base(orderConfirmationPage)
-        {
-
-        }
+        public OrderConfirmationViewModel(T orderConfirmationPage) : base(orderConfirmationPage) { }
         public bool HasOrder { get; set; }
         public string OrderId { get; set; }
         public IEnumerable<ILineItem> Items { get; set; }

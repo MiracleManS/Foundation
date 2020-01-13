@@ -2,6 +2,8 @@
 using Foundation.Commerce.Customer.ViewModels;
 using Foundation.Commerce.Models.Pages;
 using Foundation.Commerce.Order.ViewModels;
+using Foundation.Shared.Customer;
+using Foundation.Shared.Web.ViewModels;
 using Mediachase.Commerce.Customers;
 using System.Collections.Generic;
 
@@ -31,7 +33,7 @@ namespace Foundation.Commerce.Customer.Services
             IEnumerable<CartItemViewModel> cartItems);
 
         bool UseBillingAddressForShipment();
-        void UpdateOrganizationAddress(FoundationOrganization organization, B2BAddressViewModel addressModel);
+        void UpdateOrganizationAddress(IFoundationOrganization organization, B2BAddressViewModel addressModel);
         IEnumerable<CountryViewModel> GetAllCountries();
         string GetCountryNameByCode(string code);
         void DeleteAddress(string organizationId, string addressId);

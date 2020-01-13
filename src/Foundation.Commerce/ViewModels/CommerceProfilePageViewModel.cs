@@ -2,9 +2,9 @@
 using Foundation.Cms.Pages;
 using Foundation.Cms.ViewModels.Pages;
 using Foundation.Commerce.Customer;
-using Foundation.Commerce.Customer.ViewModels;
 using Foundation.Commerce.Order.ViewModels;
 using Foundation.Commerce.ViewModels.Header;
+using Foundation.Shared.Web.ViewModels;
 using System.Collections.Generic;
 
 namespace Foundation.Commerce.ViewModels

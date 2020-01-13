@@ -17,5 +17,17 @@
   <ItemGroup>
     <Content Include="Features\Stores\Index.cshtml" />
   </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EPiServer.Commerce.Core" Version="13.14.1" />
+    <PackageReference Include="EPiServer.Tracking.Commerce" Version="3.2.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Foundation.Commerce.Personalization\Foundation.Commerce.Personalization.csproj" />
+    <ProjectReference Include="..\Foundation.Commerce\Foundation.Commerce.csproj" />
+    <ProjectReference Include="..\Foundation.Demo\Foundation.Demo.csproj" />
+    <ProjectReference Include="..\Foundation.Social\Foundation.Social.csproj" />
+  </ItemGroup>
   
 </Project>

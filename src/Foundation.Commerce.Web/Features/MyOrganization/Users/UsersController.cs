@@ -15,6 +15,7 @@ using Foundation.Commerce.Customer.ViewModels;
 using Foundation.Commerce.Mail;
 using Foundation.Commerce.Models.Pages;
 using Foundation.Find.Commerce;
+using Foundation.Shared.Customer;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using System.Collections.Generic;
@@ -75,7 +76,7 @@ namespace Foundation.Features.MyOrganization.Users
             {
                 CurrentContent = currentPage,
                 Users = _customerService.GetContactsForOrganization(currentOrganization),
-                Organizations = organization?.SubOrganizations ?? new List<FoundationOrganization>()
+                Organizations = organization?.SubOrganizations ?? new List<IFoundationOrganization>()
             };
 
             if (currentOrganization.SubOrganizations.Any())

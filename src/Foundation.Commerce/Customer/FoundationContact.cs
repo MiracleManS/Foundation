@@ -1,6 +1,7 @@
-using Foundation.Commerce.Customer.ViewModels;
 using Foundation.Commerce.Extensions;
 using Foundation.Commerce.Models.Catalog;
+using Foundation.Shared.Customer;
+using Foundation.Web.ViewModels;
 using Mediachase.BusinessFoundation.Data;
 using Mediachase.Commerce.Customers;
 using Newtonsoft.Json;
@@ -11,10 +12,7 @@ namespace Foundation.Commerce.Customer
 {
     public class FoundationContact
     {
-        public FoundationContact()
-        {
-            Contact = new CustomerContact();
-        }
+        public FoundationContact() => Contact = new CustomerContact();
 
         public FoundationContact(CustomerContact contact) => Contact = contact ?? new CustomerContact();
 
@@ -103,7 +101,7 @@ namespace Foundation.Commerce.Customer
             }
         }
 
-        public FoundationOrganization FoundationOrganization
+        public IFoundationOrganization FoundationOrganization
         {
             get => Contact != null && Contact.ContactOrganization != null ? new FoundationOrganization(Contact.ContactOrganization) : null;
             set => Contact.OwnerId = value.OrganizationEntity.PrimaryKeyId;

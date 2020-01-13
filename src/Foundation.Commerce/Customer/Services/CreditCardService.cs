@@ -231,7 +231,7 @@ namespace Foundation.Commerce.Customer.Services
         {
             if (organization != null)
             {
-                var orgCards = _customerContext.GetOrganizationCreditCards(organization.OrganizationEntity);
+                var orgCards = _customerContext.GetOrganizationCreditCards(organization._organizationEntity);
                 AddRangeCreditCard(null, new OrganizationModel(organization), list, orgCards);
 
                 if (organization.SubOrganizations.Count > 0 && recursive)

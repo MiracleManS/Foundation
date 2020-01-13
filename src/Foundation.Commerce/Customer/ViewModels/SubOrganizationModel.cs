@@ -1,4 +1,5 @@
 using Foundation.Cms.Attributes;
+using Foundation.Shared.Web.ViewModels;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -26,7 +27,7 @@ namespace Foundation.Commerce.Customer.ViewModels
 
     public class SubFoundationOrganizationModel : FoundationOrganization
     {
-        public SubFoundationOrganizationModel(FoundationOrganization organization) : base(organization.OrganizationEntity)
+        public SubFoundationOrganizationModel(FoundationOrganization organization) : base(organization._organizationEntity)
         {
             Name = organization.Name;
             Locations = organization.Addresses != null && organization.Addresses.Any()

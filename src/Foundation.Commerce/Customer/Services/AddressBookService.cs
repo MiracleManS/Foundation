@@ -3,6 +3,8 @@ using Foundation.Cms.Extensions;
 using Foundation.Commerce.Customer.ViewModels;
 using Foundation.Commerce.Models.Pages;
 using Foundation.Commerce.Order.ViewModels;
+using Foundation.Shared.Customer;
+using Foundation.Shared.Web.ViewModels;
 using Mediachase.BusinessFoundation.Data;
 using Mediachase.BusinessFoundation.Data.Business;
 using Mediachase.Commerce.Customers;
@@ -417,9 +419,9 @@ namespace Foundation.Commerce.Customer.Services
             addressModel.DaytimePhoneNumber = orderAddress.DaytimePhoneNumber;
         }
 
-        public void UpdateOrganizationAddress(FoundationOrganization organization, B2BAddressViewModel addressModel)
+        public void UpdateOrganizationAddress(IFoundationOrganization organization, B2BAddressViewModel addressModel)
         {
-            var address = GetOrganizationAddress(organization.OrganizationEntity, addressModel.AddressId) ??
+            var address = GetOrganizationAddress(organization._organizationEntity, addressModel.AddressId) ??
                           CreateAddress();
 
             address.OrganizationId = organization.OrganizationId;
@@ -449,14 +451,15 @@ namespace Foundation.Commerce.Customer.Services
 
         public void DeleteAddress(string organizationId, string addressId)
         {
+            // todo: 1/19/2020 fix the Mediachase elements
             var organization = GetFoundationOrganizationById(organizationId);
             if (organization == null)
             {
                 return;
             }
 
-            var address = GetOrganizationAddress(organization.OrganizationEntity, new Guid(addressId));
-            address?.Address?.Delete();
+            var address = GetOrganizationAddress(organization._organizationEntity, new Guid(addressId));
+            address?.Delete();
         }
 
         public AddressModel GetAddress(string addressId)
@@ -475,7 +478,7 @@ namespace Foundation.Commerce.Customer.Services
         private FoundationAddress CreateAddress()
         {
             var address = new FoundationAddress(CustomerAddress.CreateInstance());
-            address.AddressId = BusinessManager.Create(address.Address);
+            address.AddressId = BusinessManager.Create(address._address);
             return address;
         }
 

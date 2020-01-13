@@ -1,6 +1,6 @@
 using EPiServer.Commerce.Order;
-using Foundation.Commerce.Customer.ViewModels;
 using Foundation.Commerce.Order.ViewModels;
+using Foundation.Shared.Web.ViewModels;
 using Mediachase.Commerce;
 using System;
 using System.Collections.Generic;

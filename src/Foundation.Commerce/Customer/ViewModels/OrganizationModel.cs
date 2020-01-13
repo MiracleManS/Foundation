@@ -1,5 +1,6 @@
 using Foundation.Cms.Attributes;
 using Foundation.Commerce.Extensions;
+using Foundation.Shared.Web.ViewModels;
 using Mediachase.Commerce.Customers;
 using System;
 using System.Collections.Generic;

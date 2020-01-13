@@ -1,7 +1,7 @@
 using EPiServer.Core;
 using System;
 
-namespace Foundation.Commerce.Customer.ViewModels
+namespace Foundation.Web.ViewModels
 {
     public class BookmarkModel
     {

@@ -10,6 +10,7 @@ using Foundation.Commerce.Models.Pages;
 using Foundation.Commerce.Order.Payments;
 using Foundation.Commerce.Order.Services;
 using Foundation.Commerce.Order.ViewModels;
+using Foundation.Shared.Web.ViewModels;
 using Mediachase.Commerce;
 using System;
 using System.Collections.Generic;

@@ -16,6 +16,7 @@ using Foundation.Commerce.Customer.ViewModels;
 using Foundation.Commerce.Markets.ViewModels;
 using Foundation.Commerce.Models.Pages;
 using Foundation.Commerce.Order.Services;
+using Foundation.Shared.Web.ViewModels;
 using Mediachase.Commerce;
 using Mediachase.Commerce.Markets;
 using System;

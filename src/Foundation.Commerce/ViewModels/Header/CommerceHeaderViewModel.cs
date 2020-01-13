@@ -1,10 +1,10 @@
 ﻿using EPiServer.Core;
 using EPiServer.SpecializedProperties;
 using Foundation.Cms.ViewModels.Header;
-using Foundation.Commerce.Customer.ViewModels;
 using Foundation.Commerce.Markets.ViewModels;
 using Foundation.Commerce.Models.Pages;
 using Foundation.Commerce.Order.ViewModels;
+using Foundation.Shared.Web.ViewModels;
 
 namespace Foundation.Commerce.ViewModels.Header
 {

@@ -1,4 +1,4 @@
-﻿using Foundation.Commerce.Customer.ViewModels;
+﻿using Foundation.Web.ViewModels;
 using System;
 using System.Collections.Generic;
 

@@ -183,7 +183,7 @@ namespace Foundation.Commerce.Customer.Services
                 return new List<FoundationContact>();
             }
 
-            return _customerContext.GetCustomerContactsInOrganization(organization.OrganizationEntity)
+            return _customerContext.GetCustomerContactsInOrganization(organization._organizationEntity)
                 .Select(_ => new FoundationContact(_))
                 .ToList();
         }

@@ -1,3 +1,4 @@
+using Foundation.Shared.Customer;
 using Mediachase.BusinessFoundation.Data;
 using Mediachase.BusinessFoundation.Data.Business;
 using Mediachase.Commerce.Customers;
@@ -5,61 +6,62 @@ using System;
 
 namespace Foundation.Commerce.Customer
 {
-    public class FoundationAddress
+    public class FoundationAddress : IFoundationAddress
     {
-        // todo: CustomAddress needs abstracted.
-        public FoundationAddress(CustomerAddress customerAddress) => Address = customerAddress;
+        private readonly CustomerAddress _address;
 
-        public CustomerAddress Address { get; set; }
+        public FoundationAddress(CustomerAddress customerAddress) => _address = customerAddress;
 
         public Guid AddressId
         {
-            get => Address.AddressId;
-            set => Address.AddressId = (PrimaryKeyId)value;
+            get => _address.AddressId;
+            set => _address.AddressId = (PrimaryKeyId)value;
         }
 
         public string Name
         {
-            get => Address.Name;
-            set => Address.Name = value;
+            get => _address.Name;
+            set => _address.Name = value;
         }
 
         public string Street
         {
-            get => Address.Line1;
-            set => Address.Line1 = value;
+            get => _address.Line1;
+            set => _address.Line1 = value;
         }
 
         public string City
         {
-            get => Address.City;
-            set => Address.City = value;
+            get => _address.City;
+            set => _address.City = value;
         }
 
         public string PostalCode
         {
-            get => Address.PostalCode;
-            set => Address.PostalCode = value;
+            get => _address.PostalCode;
+            set => _address.PostalCode = value;
         }
 
         public string CountryCode
         {
-            get => Address.CountryCode;
-            set => Address.CountryCode = value;
+            get => _address.CountryCode;
+            set => _address.CountryCode = value;
         }
 
         public string CountryName
         {
-            get => Address.CountryName;
-            set => Address.CountryName = value;
+            get => _address.CountryName;
+            set => _address.CountryName = value;
         }
 
         public Guid OrganizationId
         {
-            get => Address.OrganizationId ?? Guid.Empty;
-            set => Address.OrganizationId = (PrimaryKeyId?)value;
+            get => _address.OrganizationId ?? Guid.Empty;
+            set => _address.OrganizationId = (PrimaryKeyId?)value;
         }
 
-        public void SaveChanges() => BusinessManager.Update(Address);
+        public void SaveChanges() => BusinessManager.Update(_address);
+
+        public void Delete() => _address.Delete();
     }
 }

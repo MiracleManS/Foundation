@@ -1,6 +1,7 @@
 using Foundation.Cms.ViewModels;
 using Foundation.Commerce.Customer.ViewModels;
 using Foundation.Commerce.Models.Pages;
+using Foundation.Shared.Web.ViewModels;
 
 namespace Foundation.Commerce.Order.ViewModels
 {

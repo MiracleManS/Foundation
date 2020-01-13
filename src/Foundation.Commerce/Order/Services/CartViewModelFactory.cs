@@ -9,6 +9,7 @@ using Foundation.Commerce.Customer.ViewModels;
 using Foundation.Commerce.Markets;
 using Foundation.Commerce.Models.Pages;
 using Foundation.Commerce.Order.ViewModels;
+using Foundation.Shared.Web.ViewModels;
 using Mediachase.Commerce;
 using Mediachase.Commerce.Catalog;
 using Mediachase.Commerce.Security;

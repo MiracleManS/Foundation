@@ -16,10 +16,10 @@ using Foundation.Commerce.Order.Services;
 using Foundation.Commerce.Order.ViewModelFactories;
 using Foundation.Commerce.Order.ViewModels;
 using Foundation.Commerce.Personalization;
-// todo: commerce decouple
-//using Foundation.Features.NamedCarts;
-//using Mediachase.Commerce;
-//using Mediachase.Commerce.Shared;
+using Foundation.Features.NamedCarts;
+using Foundation.Shared.Web.ViewModels;
+using Mediachase.Commerce;
+using Mediachase.Commerce.Shared;
 using Microsoft.AspNet.Identity.Owin;
 using System;
 using System.Collections.Generic;

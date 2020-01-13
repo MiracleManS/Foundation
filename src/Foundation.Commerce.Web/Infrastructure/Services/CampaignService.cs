@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
 
-namespace Foundation.Infrastructure.Services
+namespace Foundation.Commerce.Infrastructure.Services
 {
     public class CampaignService : ICampaignService
     {
